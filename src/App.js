@@ -4,7 +4,9 @@ import ComponentCustom from "./Components/useRef/focusInput";
 function App() {
   return (
     <div className="App">
-        <ComponentCustom/>
+        <ComponentCustom st={<button>Click</button>}>
+        <h1>children</h1>
+        </ComponentCustom>
     </div>
   );
 }

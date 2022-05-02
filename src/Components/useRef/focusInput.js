@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, {useRef,useEffect,useState} from 'react';
 
-const index = () => {
+const index = (props) => {
     const [name, setname] = useState('')
     const input = useRef('')
     const count = useRef(0)
@@ -16,6 +16,7 @@ const index = () => {
     useEffect(()=>{
         count.current=count.current+1;
     },)
+    console.log(props.children);
   return (
     <div>
         <input ref={input} onChange={inputChange} value={name} type={'text'}/>
@@ -23,6 +24,7 @@ const index = () => {
         Rerender component {count.current} times.
         <br/>
         <button onClick={clickHandler}>Focus</button>
+        {props.children}
     </div>
   )
 }
