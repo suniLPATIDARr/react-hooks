@@ -15,7 +15,7 @@ const index = (props) => {
     }
     useEffect(()=>{
         count.current=count.current+1;
-    },)
+    })
     console.log(props.children);
   return (
     <div>
