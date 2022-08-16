@@ -1,12 +1,10 @@
 import './App.css';
-import ComponentCustom from "./Components/context/ContextWrapper";
+import ComponentCustom from "./Components/Context/ContextWrapper";
 
 function App() {
   return (
     <div className="App">
-        <ComponentCustom st={<button>Click</button>}>
-        <h1>children</h1>
-        </ComponentCustom>
+       <ComponentCustom/>
     </div>
   );
 }
