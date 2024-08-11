@@ -2,8 +2,8 @@ import React from 'react';
 import { ThemeProvider } from './ThemeProvider';
 import ContextFunction from './Context';
 
-export const ThemeContext=React.createContext()
 const ContextWrapper = () => {
+    console.log('contextWrapper')
   return (
     <ThemeProvider>
     <ContextFunction/>

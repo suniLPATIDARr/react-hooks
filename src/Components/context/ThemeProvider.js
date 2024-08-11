@@ -5,7 +5,8 @@ const UpdateThemeContext = React.createContext();
 export function useThemeContext() {
     return useContext(ThemeContext)
 }
-export function useUpdateThemeContext() {
+export function useUpdateThemeContext(inp) {
+    console.log(inp)
     return useContext(UpdateThemeContext)
 }
 export function ThemeProvider({children}) {

@@ -1,10 +1,11 @@
-import './App.css';
-import ComponentCustom from "./Components/Context/ContextWrapper";
+import "./App.css";
+import DefferedHook from "./Components/useDefferedValue/index";
 
 function App() {
+  console.log("App");
   return (
     <div className="App">
-       <ComponentCustom/>
+      <DefferedHook />
     </div>
   );
 }

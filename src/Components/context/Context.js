@@ -2,7 +2,7 @@ import React from 'react';
 import { useThemeContext, useUpdateThemeContext } from './ThemeProvider';
 const Context = () => {
     const darkTheme = useThemeContext()
-    const onToggle = useUpdateThemeContext()
+    const onToggle =  useUpdateThemeContext('jsdb')
     const themeStyles={
         background:darkTheme?'black':'lightBlue',
         color:darkTheme?'lightBlue':'black',
@@ -11,6 +11,7 @@ const Context = () => {
         marginTop:20,
         margin:'auto'
     }
+    console.log('context')
   return (
     <>
     <div style={themeStyles}>Context</div>
