@@ -1,11 +1,11 @@
 import "./App.css";
-import DefferedHook from "./Components/useDefferedValue/index";
+import UseTransition from "./Components/useTransition/useTransition.jsx";
 
 function App() {
   console.log("App");
   return (
     <div className="App">
-      <DefferedHook />
+      <UseTransition />
     </div>
   );
 }
